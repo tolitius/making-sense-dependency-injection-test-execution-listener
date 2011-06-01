@@ -1,13 +1,13 @@
 #What is "Making Sense Dependency Injection Test Execution Listener"?
 
-This listener is mostly useful for Spring / JUnit tests as well as JUnit based test frameworks implementations ( e.g. Spock ). 
+This listener is mostly useful for Spring / JUnit tests as well as JUnit based test frameworks implementations ( e.g. [Spock](http://code.google.com/p/spock/) ). 
 It will ensure to pre load Spring ApplicationContext and autowire all the beans (by type) BEFORE @BeforeClass is called.
 
 #Why Would I Ever Need It!?
 
 This proves really useful in case:
 
-* DbUnit's DbTester needs to be created ONCE before executing all the tests OR
+* DbUnit's [DatabaseTester](http://www.dbunit.org/apidocs/org/dbunit/IDatabaseTester.html) needs to be created ONCE before executing all the tests OR
 * A database needs to be setup ONCE per execution of all the tests OR
 * You just NEED it in @BeforeClass, and without this listener there is no way to get it
 
