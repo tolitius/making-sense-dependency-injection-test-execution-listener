@@ -38,3 +38,9 @@ You'd register this listener as any other TestExecutionListener:
 ```
 
 Now, all your beans will be available in @BeforeClass and / or setupSpec() methods
+
+## License
+
+Copyright © 2015 tolitius
+
+Distributed under the Eclipse Public License, the same as Clojure.
